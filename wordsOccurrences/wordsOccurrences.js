@@ -1,6 +1,6 @@
 const wordOccurrences = (text) => {
   const occurrences = {}
-  const regEx = new RegExp('[A-z-À-ÿ]+', 'g')
+  const regEx = new RegExp('[-0-9A-zÀ-ÿ]+', 'g')
   
   text.match(regEx).reduce((prev, curr) => {
     const word = `${curr.toLowerCase()}`
