@@ -4,8 +4,5 @@ const wordOccurrences = (text) => {
   return text.match(regEx).reduce((prev, curr) => {
     const word = curr.toLowerCase()
     
-    return (word.length > 1)
-           ? (prev[word] = ((prev[word] += 1) || 1), prev)
-           : prev
-    }, {})    
+    return (((word.length > 1) ? prev[word] = ((prev[word] += 1) || 1) : null), prev) }, {})
 }    
