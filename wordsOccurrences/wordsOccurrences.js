@@ -3,7 +3,7 @@ const wordOccurrences = (text) => {
   const regEx = new RegExp('[A-z-À-ÿ]+', 'g')
   
   text.match(regEx).reduce((prev, curr) => {
-    const word = `${curr.slice(0, 1).toLowerCase()}${curr.slice(1).toLowerCase()}`
+    const word = `${curr.toLowerCase()}`
     
     return (word.length > 1)
            ? occurrences[word] = ((occurrences[word] += 1) || 1)
