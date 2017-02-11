@@ -1,8 +1,6 @@
 const wordsOccurrences = (text) => {
-  const regEx = new RegExp('[-0-9a-zà-ÿ]+', 'gi')
+  const regEx = new RegExp('[-0-9a-zà-ÿ]+', 'g')
   
-  return (text.match(regEx) || []).reduce((prev, curr) => {
-    const word = curr.toLowerCase()
-    
-    return (((word.length > 1) ? prev[word] = (++prev[word] || 1) : null), prev) }, Object.create(null))
+  return (text.toLowerCase().match(regEx) || []).reduce((prev, curr) => {    
+    return (((curr.length > 1) ? prev[curr] = (++prev[curr] || 1) : null), prev) }, Object.create(null))
 }    
