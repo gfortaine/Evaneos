@@ -1,6 +1,12 @@
-const wordsOccurrences = (text) => {
-  const regEx = new RegExp('[-0-9a-zà-ÿ]+', 'g')
-  
-  return (text.toLowerCase().match(regEx) || []).reduce((prev, curr) => {    
-    return (((curr.length > 1) ? prev[curr] = (++prev[curr] || 1) : null), prev) }, Object.create(null))
-}    
+// @flow
+
+type MapOfNumbers = { [key: string]: ?number }
+
+export default (text: string): MapOfNumbers => (
+  (text.toLowerCase().match(/[-0-9a-zà-ÿ]+/g) || []).reduce((prev, curr) => (
+    curr.length > 1
+    ? { __proto__: null, ...prev, [curr]: ((prev[curr] + 1) || 1) }
+    : prev
+  ), { __proto__: null })
+)
+

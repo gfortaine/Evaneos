@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "airbnb",
+    "cleanjs",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype"
+  ],
+  "rules" : {
+    "semi": ["error", "never"]
+  }
+}
