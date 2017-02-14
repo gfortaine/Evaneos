@@ -9,4 +9,3 @@ export default (text: string): MapOfNumbers => (
     : prev
   ), { __proto__: null })
 )
-

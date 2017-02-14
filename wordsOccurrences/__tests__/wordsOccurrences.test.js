@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/count-word-occurrences/train/javascript
+
 import wordsOccurrences from '../wordsOccurrences'
 
 describe('wordsOccurrences', () => {
@@ -11,6 +13,15 @@ describe('wordsOccurrences', () => {
     expect(wordsOccurrences(text).t).toBeUndefined()
     expect(wordsOccurrences(text).function).toBeUndefined()
     expect(wordsOccurrences(text).constructor).toBeUndefined()
+  })
+  it('should report the proper count for all words', () => {
+    const text = 'Welcome to the function, constructor'
+
+    expect(wordsOccurrences(text).welcome).toBe(1)
+    expect(wordsOccurrences(text).to).toBe(1)
+    expect(wordsOccurrences(text).the).toBe(1)
+    expect(wordsOccurrences(text).function).toBe(1)
+    expect(wordsOccurrences(text).constructor).toBe(1)
   })
 })
 
