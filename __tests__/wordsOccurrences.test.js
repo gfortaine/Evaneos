@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/count-word-occurrences/train/javascript
 
-import wordsOccurrences from '../wordsOccurrences'
+import wordsOccurrences from '../src/wordsOccurrences'
 
 describe('wordsOccurrences', () => {
   it('should count the number of occurences of a word in a given text', () => {

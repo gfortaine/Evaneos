@@ -1,16 +1,14 @@
 {
   "extends": [
     "airbnb",
+    "cleanjs",
     "plugin:flowtype/recommended"
   ],
   "plugins": [
-    "flowtype",
-    "immutable"
+    "flowtype"
   ],
   "rules" : {
-    "immutable/no-let": "error",
-    "immutable/no-this": "error",
-    "immutable/no-mutation": "error",
+    "fp/no-nil": "warn",
     "semi": ["error", "never"]
   }
 }
