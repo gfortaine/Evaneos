@@ -1,6 +1,15 @@
 {
   "name": "wordsoccurrences",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gfortaine/Evaneos.git"
+  },
+  "keywords": [
+    "software factory"
+  ],
+  "author": "Guillaume FORTAINE <guillaume@quocian.com>",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
@@ -16,23 +25,19 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
+    "husky": "^0.13.1",
     "jest": "^18.1.0",
-    "lint-staged": "^3.3.0",
-    "pre-commit": "^1.2.2"
+    "lint-staged": "^3.3.0"
   },
   "scripts": {    
     "flow": "flow",
     "lint-staged": "lint-staged",
     "test": "jest",
+    "precommit": "yarn flow && yarn lint-staged && yarn test",
     "start": "babel-node ./wordsOccurrences.js"
   },
   "lint-staged": {
     "*.js": "eslint"
   },
-  "pre-commit": [
-    "flow",
-    "lint-staged",
-    "test"
-  ],
   "license": "MIT"
 }
