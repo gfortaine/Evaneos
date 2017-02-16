@@ -8,4 +8,4 @@ export default (text: string): MapOfNumbers => (
     ? { __proto__: null, ...prev, [curr]: ((prev[curr] + 1) || 1) }
     : prev
   ), { __proto__: null })
-) 
+)
