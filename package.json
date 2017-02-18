@@ -28,8 +28,7 @@
     "eslint-plugin-react": "^6.10.0",
     "husky": "typicode/husky",
     "jest": "^18.1.0",
-    "lint-staged": "okonet/lint-staged",
-    "sixflix": "bevacqua/sixflix"
+    "lint-staged": "okonet/lint-staged"
   },
   "scripts": {    
     "precommit": "flow && lint-staged && jest --coverage",
