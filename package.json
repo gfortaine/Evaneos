@@ -27,18 +27,13 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "husky": "^0.13.1",
-    "jest": "^18.1.0",
-    "lint-staged": "^3.3.0"
+    "jest": "^18.1.0"
   },
   "scripts": {    
     "flow": "flow",
-    "lint-staged": "lint-staged",
+    "lint": "eslint --cache ./",
     "test": "jest",
-    "precommit": "yarn flow && yarn lint-staged && yarn test",
+    "precommit": "yarn flow && yarn lint && yarn test",
     "start": "babel-node ./wordsOccurrences.js"
-  },
-  "lint-staged": {
-    "*.js": "eslint"
-  },
-  "license": "MIT"
+  }
 }
