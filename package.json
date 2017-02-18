@@ -28,13 +28,11 @@
     "eslint-plugin-react": "^6.10.0",
     "husky": "typicode/husky",
     "jest": "^18.1.0",
-    "lint-staged": "okonet/lint-staged" 
+    "lint-staged": "okonet/lint-staged",
+    "sixflix": "bevacqua/sixflix"
   },
   "scripts": {    
-    "flow": "flow",
-    "lint-staged": "lint-staged",
-    "test": "jest",
-    "precommit": "yarn flow && yarn lint-staged && yarn test",
+    "precommit": "flow && lint-staged && jest --coverage",
     "start": "babel-node ./wordsOccurrences.js"
   },
   "lint-staged": {
