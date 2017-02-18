@@ -40,5 +40,4 @@
   "lint-staged": {
     "*.js": "eslint"
   }
-
 }
