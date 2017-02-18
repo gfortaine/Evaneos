@@ -1,0 +1,13 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "rules" : {
+    "better/explicit-return": "off",
+    "fp/no-unused-expression": "off",    
+    "semi": ["error", "never"]
+  }
+}
