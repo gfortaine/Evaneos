@@ -1,3 +1,6 @@
+/* eslint-disable fp/no-unused-expression */
+/* eslint-disable better/explicit-return */
+
 // https://www.codewars.com/kata/count-word-occurrences/train/javascript
 
 import wordsOccurrences from '../src/wordsOccurrences'

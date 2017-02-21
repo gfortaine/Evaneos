@@ -17,21 +17,23 @@
     "babel-plugin-transform-exponentiation-operator": "^6.22.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "eslint": "^3.15.0",
+    "eslint": "^3.16.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-cleanjs": "bodil/eslint-config-cleanjs",
     "eslint-plugin-better": "^0.1.5",
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "husky": "typicode/husky",
-    "jest": "^18.1.0",
+    "jest": "^19.0.0",
     "lint-staged": "okonet/lint-staged"
   },
   "scripts": {    
-    "precommit": "flow && lint-staged && jest --coverage",
+    "test": "flow && lint-staged && jest --coverage",
+    "precommit": "yarn test",
     "start": "babel-node ./wordsOccurrences.js"
   },
   "lint-staged": {

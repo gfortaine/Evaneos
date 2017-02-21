@@ -2,6 +2,7 @@
 
 type MapOfNumbers = { [key: string]: ?number }
 
+
 export default (text: string): MapOfNumbers => (
   (text.toLowerCase().match(/[-0-9a-zà-ÿ]+/g) || []).reduce((prev, curr) => (
     curr.length > 1
