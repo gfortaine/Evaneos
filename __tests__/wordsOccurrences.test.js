@@ -27,4 +27,3 @@ describe('wordsOccurrences', () => {
     expect(wordsOccurrences(text).constructor).toBe(1)
   })
 })
-
