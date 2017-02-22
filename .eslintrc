@@ -5,7 +5,8 @@
   "extends": [
     "airbnb",
     "cleanjs",    
-    "plugin:flowtype/recommended"    
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended"      
   ],
   "plugins": [
     "flowtype",
