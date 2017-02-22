@@ -14,6 +14,7 @@
   ],
   "rules" : {
     "fp/no-nil": "warn",
+    "no-confusing-arrow": ["warn", {"allowParens": false}],
     "semi": ["error", "never"]
   }
 }
