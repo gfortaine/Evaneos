@@ -17,28 +17,29 @@
     "babel-plugin-transform-exponentiation-operator": "^6.22.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "eslint": "^3.16.0",
+    "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-cleanjs": "bodil/eslint-config-cleanjs",
     "eslint-plugin-better": "^0.1.5",
-    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-flowtype": "^2.30.3",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
-    "husky": "^0.13.1",
-    "jest": "^19.0.1",
+    "husky": "^0.13.2",
+    "jest": "^19.0.2",
     "lint-staged": "^3.3.1",
-    "prettier-eslint-cli": "^3.0.0"
+    "prettier-eslint-cli": "^3.1.2"
   },
   "scripts": {    
     "test": "flow && lint-staged && jest --coverage",
     "precommit": "yarn test",
-    "start": "babel-node ./wordsOccurrences.js"
+    "start": "babel-node ./src/wordsOccurrences.js"
   },
   "lint-staged": {
     "*.js": [
+      "eslint",
       "prettier-eslint --write",
       "git add"
     ]

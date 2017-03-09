@@ -13,9 +13,9 @@
     "jest"
   ],
   "rules" : {
+    "better/no-new": "warn",
     "fp/no-nil": "warn",
-    "no-confusing-arrow": ["warn", {"allowParens": false}],
-    "no-mixed-operators": "warn",
-    "semi": ["error", "never"]
+    "fp/no-rest-parameters": "warn",
+    "no-confusing-arrow": "warn"
   }
 }
